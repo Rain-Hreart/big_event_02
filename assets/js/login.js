@@ -36,7 +36,7 @@ $(function () {
     // 发送ajax
     $.ajax({
       type: 'POST',
-      url: 'http://api-breakingnews-web.itheima.net/api/reguser',
+      url: '/api/reguser',
       data: {
         username: $('.reg-box input[name=username]').val(),
         password: $('.reg-box input[name=password]').val(),
@@ -65,7 +65,7 @@ $(function () {
     //发送ajax
     $.ajax({
       type: 'POST',
-      url: 'http://api-breakingnews-web.itheima.net/api/login',
+      url: '/api/login',
       data: $(this).serialize(),
       dataType: 'json',
       success: (res) => {
